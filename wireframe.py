@@ -11,6 +11,7 @@ class WireframeGUI:
         self.root = root
         self.root.title("Wireframe to Saber Converter")
         self.root.geometry("600x750")
+        self.root.minsize(600, 750) # Prevent resizing below the base window size, before the elements were easily cutoff when resized
 
         # Variables to store user inputs
         self.infile_path = tk.StringVar()
